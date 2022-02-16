@@ -1,0 +1,47 @@
+{
+  "apiName": "DirectDebit",
+  "apiType": "QUERY",
+  "endpointType": "",
+  "endpointUri": "/accounts/{accountId}/paymentSubscriptions/{customerId}/{deviceId}?aaa=bbb",
+  "apiResponseTypeValue": "setPaymentSubscriptionResponse",
+  "webResponse": [
+    {
+      "attributeName": "attributes",
+      "attributeType": "Attributes",
+      "children": [
+        {
+          "attributeName": "amount",
+          "attributeType": "Double",
+          "children": null
+        },
+        {
+          "attributeName": "paymentInformation",
+          "attributeType": "PaymentInformation",
+          "children": [
+            {
+              "attributeName": "paymentType",
+              "attributeType": "PaymentType",
+              "children": null
+            },
+            {
+              "attributeName": "fixedPaymentDetail",
+              "attributeType": "FixedPaymentDetail",
+              "children": [
+                {
+                  "attributeName": "amount",
+                  "attributeType": "Double",
+                  "children": null
+                },
+                {
+                  "attributeName": "currency",
+                  "attributeType": "Currency",
+                  "children": null
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
